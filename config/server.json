@@ -1,0 +1,9 @@
+{
+  "ui": true,
+  "server": true,
+  "disable_update_check": true,
+  "dns_config": {
+    "allow_stale": false
+  },
+  "datacenter": "Home"
+}
