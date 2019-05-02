@@ -1,5 +1,7 @@
 images/
+templates/
 tools/
-container.conf
+config.yml
+LICENSE.md
 README.md
 Makefile

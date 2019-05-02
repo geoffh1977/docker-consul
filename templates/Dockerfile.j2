@@ -1,9 +1,9 @@
 # Build Consul Server Container
-FROM geoffh1977/alpine:latest
+FROM {{ dockerUser + "/" + buildImageName + ":" + buildImageVersion }}
 LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
 USER root
 
-ENV CONSUL_VERSION "1.4.4"
+ENV CONSUL_VERSION "{{ finalImageVersion }}"
 ENV DNS_RESOLVES "consul"
 ENV DNS_PORT "8600"
 ENV CONSUL_ADDR "http://consul:8500"
