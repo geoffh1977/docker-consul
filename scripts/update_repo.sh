@@ -26,9 +26,12 @@ git commit -m "Automated: Updating To Version ${LOCAL_VERSION}" > /dev/null
 echo "  Create A New Repository Tag For Version ${LOCAL_VERSION}"
 git tag -a "${LOCAL_VERSION}" -m "${APP_NAME} Container Version ${LOCAL_VERSION}" > /dev/null
 
+echo
 echo "  Pushing Updates To Repository"
+echo
 git push origin master > /dev/null
 git push --tags origin > /dev/null
+echo
 echo "Repository Successfully Updated"
 echo
 

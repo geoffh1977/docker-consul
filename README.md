@@ -1,6 +1,6 @@
 # Consul Service Mesh Container #
 
-![Consul Logo](https://raw.githubusercontent.com/geoffh1977/consul/master/images/consul-logo.png)
+![Consul Logo](https://raw.githubusercontent.com/geoffh1977/docker-consul/master/images/consul-logo.png)
 
 ## Description ##
 This docker image provides the Hashicorp Consul service mesh. It includes a simple configuration to allow anybody to get started with Consul.
