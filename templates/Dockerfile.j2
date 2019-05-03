@@ -1,12 +1,12 @@
 # Build Consul Server Container
 FROM {{ dockerUser + "/" + buildImageName + ":" + buildImageVersion }}
-LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
+LABEL maintainer="{{ dockerUser }} <{{ dockerUserEmail }}>"
 USER root
 
-ENV CONSUL_VERSION "{{ finalImageVersion }}"
-ENV DNS_RESOLVES "consul"
-ENV DNS_PORT "8600"
-ENV CONSUL_ADDR "http://consul:8500"
+ENV CONSUL_VERSION "{{ finalImageVersion }}" \
+    DNS_RESOLVES "consul" \
+    DNS_PORT "8600" \
+    CONSUL_ADDR "http://consul:8500"
 
 # Install Software
 # hadolint ignore=DL3003,DL3018,DL3019

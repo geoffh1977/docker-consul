@@ -1,11 +1,12 @@
 ---
 # Docker User
 dockerUser: geoffh1977
+dockerUserEmail: geoffh1977@gmail.com
 license: gnu-gpl-v3.0
 
 # Source Build Variables
 buildImageName: alpine
-buildImageVersion: latest
+buildImageVersion: 3
 
 # Final Image Variables
 finalImageName: consul
