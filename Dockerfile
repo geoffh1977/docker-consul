@@ -1,12 +1,12 @@
 # Build Consul Server Container
-FROM geoffh1977/alpine:latest
+FROM geoffh1977/alpine:3
 LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
 USER root
 
-ENV CONSUL_VERSION "1.4.4"
-ENV DNS_RESOLVES "consul"
-ENV DNS_PORT "8600"
-ENV CONSUL_ADDR "http://consul:8500"
+ENV CONSUL_VERSION="1.4.4" \
+    DNS_RESOLVES="consul" \
+    DNS_PORT="8600" \
+    CONSUL_ADDR="http://consul:8500"
 
 # Install Software
 # hadolint ignore=DL3003,DL3018,DL3019
